@@ -128,7 +128,7 @@ add_library(lib_calib
   src/calib/scan_undistortion.cpp
 )
 target_link_libraries(lib_calib ${thirdparty_libraries})
-
+add_dependencies(lib_calib  ${PROJECT_NAME}_generate_messages_cpp)
 ################# Node ###################
 
 add_executable(li_calib_node src/app/li_calib_node.cpp src/calib/calib_helper.cpp)
