@@ -61,7 +61,25 @@ The code of observability-awared module and the simulator would be released in t
 
 ## Credits
 
-This code was developed by the [APRIL Lab](https://april.zju.edu.cn/) in Zhejiang University.
+This code was developed by the [APRIL Lab](https://april.zju.edu.cn/) in Zhejiang University. For researchers that leveraged this work, please cite the
+following:
+
+```txt
+@Conference{lv2020targetless,
+  title={Targetless calibration of lidar-imu system based on continuous-time batch estimation},
+  author={Lv, Jiajun and Xu, Jinhong and Hu, Kewei and Liu, Yong and Zuo, Xingxing},
+  booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={9968--9975},
+  year={2020},
+  organization={IEEE}
+}
+@Journal{lv2022,
+  Title      = {{OA-LICalib}: Observability-Aware Intrinsic and Extrinsic Calibration of LiDAR-IMU Systems},
+  Author     = {Jiajun Lv, Xingxing Zuo, Kewei Hu,  Jinhong Xu, Guoquan Huang, and Yong Liu},
+  Year       = {2022},
+  Url        = {\url{https://github.com/APRIL-ZJU/OA-LICalib}}
+}
+```
 
 ## License
 
