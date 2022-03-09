@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+   <arg name="config_path"    default="/config/simu.yaml" />
+
+  <node pkg="oa_licalib" type="li_calib_node" name="li_calib_node_batch" output="screen">
+    <!-- <node pkg="oa_licalib" type="li_calib_node" name="li_calib_node" output="screen"
+      clear_params="true" launch-prefix="gdb -ex run &#45;&#45;args"> -->
+
+    <param name="config_path"         type="string"   value="$(arg config_path)" />
+
+   </node>
+
+</launch>

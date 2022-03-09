@@ -1,0 +1,8 @@
+- git:
+   local-name: ndt_omp
+   uri: https://github.com/APRIL-ZJU/ndt_omp.git
+
+- git:
+   local-name: ros_rslidar
+   uri: https://github.com/RoboSense-LiDAR/ros_rslidar.git
+

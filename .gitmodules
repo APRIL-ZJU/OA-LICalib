@@ -1,0 +1,12 @@
+[submodule "thirdparty/Sophus"]
+	path = thirdparty/Sophus
+	url = https://github.com/strasdat/Sophus.git
+[submodule "thirdparty/eigen"]
+	path = thirdparty/eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "thirdparty/ceres-solver"]
+	path = thirdparty/ceres-solver
+	url = https://github.com/ceres-solver/ceres-solver.git
+[submodule "thirdparty/Pangolin"]
+	path = thirdparty/Pangolin
+	url = https://github.com/stevenlovegrove/Pangolin.git

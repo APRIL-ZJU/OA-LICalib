@@ -1,0 +1,55 @@
+# bag
+topic_lidar: /scan_sim # /velodyne_packets #
+topic_imu: /imu_sim
+
+LidarModel: VLP_16_SIMU
+vlp16_ring_case: 0
+
+scan4map: 15.0
+ndtResolution: 0.5 # 0.5 for indoor case and 1.0 for outdoor case
+ndt_key_frame_downsample: 0.1
+map_downsample_size: 0.25
+
+knot_distance: 0.02
+
+use_gui: false
+
+# 当 segment_num = 1时，即用一段数据标定
+segment_num: 1
+selected_segment:
+  - {start_time: 0, end_time: 7, path_bag: /home/ha/catkin_oa/src/OA-LICalib/data/bag/simu_bag.bag}
+
+
+# 平面运动时，旋转外参无法初始化
+plane_motion: false
+
+# optimization weight
+gyro_weight: 2.80
+accel_weight: 1.85
+lidar_weight: 1.0
+
+lock_accel_bias: false
+
+opt_timeoffset: false
+timeoffset_padding: 0.01
+
+opt_lidar_intrinsic: true
+opt_IMU_intrinsic: true
+
+iteration_num: 14
+
+# For CalibParamManager
+extrinsic:
+  Trans: [0.25, 0.13, 0.07]
+  Trans_prior: [0.25, 0.13, 0.07]
+
+  Rot: [1, 0, 0,
+       0, 1, 0,
+       0, 0, 1]
+
+  # Trans: [0.3, 0.15, 0.05]
+
+  # gt [1, 2, 5]deg
+  # Rot: [  0.995588, -0.0871026,  0.0348995,
+  #       0.0877492,    0.99599, -0.0174418,
+  #     -0.0332403,  0.0204272,   0.999239]

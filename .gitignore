@@ -1,0 +1,17 @@
+CMakeLists.txt.user
+build
+thirdparty/build-*
+
+# Compiled python.
+*.pyc
+*.pdf
+*.pcd
+
+.vscode/*
+
+# QtCreator
+CMakeLists.txt.user
+
+simu_bag/
+
+launch/.vscode/
