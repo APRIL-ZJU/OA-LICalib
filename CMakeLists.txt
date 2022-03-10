@@ -31,7 +31,7 @@ find_package(Eigen3 REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIR})
 set(STD_CXX_FS stdc++fs)
 
-find_package(Ceres 1.14.0  REQUIRED)
+find_package(Ceres REQUIRED)
 include_directories(${CERES_INCLUDE_DIRS})
 
 message(STATUS "Found Eigen headers in: ${EIGEN3_INCLUDE_DIR}")
@@ -62,7 +62,6 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 #include_directories(${YAML_CPP_INCLUDEDIR})
 find_package(yaml-cpp REQUIRED)
 include_directories(${YAML_INCLUDE_DIRS})
-target_link_libraries(${YAML_CPP_LIBRARIES})
 
 set(PANGOLIN_DIR "${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/build-pangolin")
 find_package(Pangolin REQUIRED)
