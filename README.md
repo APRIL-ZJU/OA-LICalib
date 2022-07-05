@@ -87,10 +87,11 @@ following:
   organization={IEEE}
 }
 @Journal{lv2022,
-  Title      = {{OA-LICalib}: Observability-Aware Intrinsic and Extrinsic Calibration of LiDAR-IMU Systems},
-  Author     = {Jiajun Lv, Xingxing Zuo, Kewei Hu,  Jinhong Xu, Guoquan Huang, and Yong Liu},
-  Year       = {2022},
-  Url        = {\url{https://github.com/APRIL-ZJU/OA-LICalib}}
+  title      = {{OA-LICalib}: Observability-Aware Intrinsic and Extrinsic Calibration of LiDAR-IMU Systems},
+  author     = {Jiajun Lv, Xingxing Zuo, Kewei Hu,  Jinhong Xu, Guoquan Huang, and Yong Liu},
+  journal={IEEE Transactions on Robotics},
+  year={2022},
+  publisher={IEEE}
 }
 ```
 
