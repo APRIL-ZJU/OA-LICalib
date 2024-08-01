@@ -10,6 +10,7 @@ project(oa_licalib)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_BUILD_TYPE "RELEASE")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -msse4.2")
+set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} /opt/local/lib)
 #add_definitions(-O3 -msse -msse2 -msse3 -msse4 -msse4.1 -msse4.2)
 
 find_package(OpenMP)

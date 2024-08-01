@@ -15,9 +15,10 @@ knot_distance: 0.02
 use_gui: false
 
 # 当 segment_num = 1时，即用一段数据标定
+# Use /root/catkin_ws/src/OA-LICalib/data/bag/<bag_name>.bag with docker
 segment_num: 1
 selected_segment:
-  - {start_time: 0, end_time: 7, path_bag: /home/ha/catkin_oa_calib/src/OA-LICalib/data/bag/simu_bag.bag}
+  - {start_time: 0, end_time: 7, path_bag: /root/catkin_ws/src/OA-LICalib/data/bag/simu_bag.bag}
 
 
 # 平面运动时，旋转外参无法初始化

@@ -41,6 +41,30 @@ catkin_make -DCATKIN_WHITELIST_PACKAGES="ndt_omp"
 catkin_make -DCATKIN_WHITELIST_PACKAGES=""
 source ./devel/setup.bash
 ```
+## Set up with Docker
+*Requires Docker and NVIDIA Container Toolkit installation.*
+
+1. Create your config yaml file while making sure to specify the topics for the IMU and LiDAR. Moreover, make sure the `path_bag` parameter is set correctly. Note: `/root/catkin_ws/src/OA-LICalib/` is linked to the OA-LICalib project directory, so any bag and config paths should be set accordingly.
+2. Navigate to the `/docker` folder and adjust the permissions of `container_run.sh`
+```
+chmod 755 container_run.sh
+```
+3. Build the docker image.
+```
+docker build -t oa-calib .
+```
+4. Create the docker container while still in `/docker`.
+```
+# [Usage] ./container_run.sh <container> <image:tag>
+./container_run.sh oa-calib-container oa-calib:latest
+```
+5. Build and run OA-LICalib
+In `/root/catkin_ws/` of the docker container terminal, run the `setup.sh` script to build and run the package. 
+```
+./setup.sh
+source devel/setup.bash
+roslaunch oa_licalib li_calib.launch
+```
 
 ## Intrinsic and Extrinsic Calibration
 
